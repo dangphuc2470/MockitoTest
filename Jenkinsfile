@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage ('Checkout') {
             steps {
-                checkout scm
+                checkout scmGit(
+                    branches: [[name: 'main']],
+                    userRemoteConfigs: [[url: 'https://github.com/dangphuc2470/MockitoTest.git']])
             }
         }
         stage ('Download lcov converter') {
