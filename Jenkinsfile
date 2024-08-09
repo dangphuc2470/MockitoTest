@@ -29,7 +29,7 @@ pipeline {
         }
         stage('Run Analyzer') {
             steps {
-                sh "flutter analyze --options analysis_options.yaml ."
+                sh "flutter analyze"
             }
         }
     }
