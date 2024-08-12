@@ -20,6 +20,7 @@ class Cat {
   void sleep() {}
   void hunt(String place, String prey) {}
   int lives = 9;
+
 }
 
 class Dog {
